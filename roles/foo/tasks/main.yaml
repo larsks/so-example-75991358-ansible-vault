@@ -1,0 +1,11 @@
+- name: load encrypted vars
+  include_vars:
+    file: vault.yaml
+
+- name: show us debug clear_text
+  debug:
+    var: clear_text
+
+- name: show us debug password
+  debug:
+    var: password
